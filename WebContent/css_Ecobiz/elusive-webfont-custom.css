@@ -1,0 +1,154 @@
+    .standard {
+        font-size: 1.6em;
+    }
+/* Add custom size CSS for the Font Awesome Icons */
+	.icon-2x {
+    font-size: 2em;
+    }
+    
+	.icon-2x.icon-border {
+    border-width: 2px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+   }
+	
+	.icon-3x {
+    font-size: 2.8em;
+    }
+    
+	.icon-3x.icon-border {
+    border-width: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   }
+	
+	.icon-4x {
+    font-size: 3.6em;
+    }
+    
+	.icon-4x.icon-border {
+    border-width: 4px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+   }
+	
+	.icon-5x {
+    font-size: 5em;
+    }
+    
+	.icon-5x.icon-border {
+    border-width: 5px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+   }
+   
+
+	.icon-6x {
+    font-size: 6em;
+    }
+    
+	.icon-6x.icon-border {
+    border-width: 6px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+   }
+   
+
+	.icon-7x {
+    font-size: 7em;
+    }
+    
+	.icon-7x.icon-border {
+    border-width: 7px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+   }
+   
+
+	.icon-8x {
+    font-size: 8em;
+    }
+    
+	.icon-8x.icon-border {
+    border-width: 8px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+   }
+   
+
+	.icon-9x {
+    font-size: 9em;
+    }
+    
+	.icon-9x.icon-border {
+    border-width: 9px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+   }
+   
+   .icon-10x {
+    font-size: 10em;
+    }
+    
+	.icon-10x.icon-border {
+    border-width: 10px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+   }
+   
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+[class^="icon-"].pull-left,
+[class*=" icon-"].pull-left {
+  margin-right: .05em;
+}
+[class^="icon-"].pull-right,
+[class*=" icon-"].pull-right {
+  margin-left: .05em;
+}
+.btn [class^="icon-"].pull-left.icon-2x,
+.btn [class*=" icon-"].pull-left.icon-2x,
+.btn [class^="icon-"].pull-right.icon-2x,
+.btn [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .35em;
+}
+.btn [class^="icon-"].icon-spin.icon-large,
+.btn [class*=" icon-"].icon-spin.icon-large {
+  height: .75em;
+}
+.btn.btn-small [class^="icon-"].pull-left.icon-2x,
+.btn.btn-small [class*=" icon-"].pull-left.icon-2x,
+.btn.btn-small [class^="icon-"].pull-right.icon-2x,
+.btn.btn-small [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .45em;
+}
+.btn.btn-large [class^="icon-"].pull-left.icon-2x,
+.btn.btn-large [class*=" icon-"].pull-left.icon-2x,
+.btn.btn-large [class^="icon-"].pull-right.icon-2x,
+.btn.btn-large [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .2em;
+}
+.icon-spin {
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+.icon-spin:hover {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    transform: rotateZ(360deg); 
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.MessageVO" table="Message">
+   
+   	<id name="messageId" type="int" column="MessageId" >
+   		<generator class="increment"/>
+  	</id>
+
+	<property name="message">
+	  		<column name="Message"/>
+  	</property>
+  
+  <property name="subject">
+  		<column name="Subject"/>
+  	</property>
+  
+  	<property name="userId">
+   		<column name="UserId" />
+  	</property>
+  
+ </class>
+
+</hibernate-mapping>

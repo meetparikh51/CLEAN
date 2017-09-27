@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.MessageallVO" table="Message_all">
+   
+   	<id name="messageallId" type="int" column="messageallId" >
+   		<generator class="increment"/>
+  	</id>
+
+	<property name="description">
+	  		<column name="description"/>
+  	</property>
+  	
+  	<property name="path">
+	  		<column name="path"/>
+  	</property>
+  
+<many-to-one name="user_Id" class="VO.login_vo" column="UserId"></many-to-one>
+  
+ </class>
+
+</hibernate-mapping>

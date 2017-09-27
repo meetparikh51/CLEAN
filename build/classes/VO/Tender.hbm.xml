@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.AddTenderVO" table="Tender">
+   
+   	<id name="tenderId" type="int" column="tenderId" >
+   		<generator class="increment"/>
+  	</id>
+
+	<property name="tenderNo">
+	  		<column name="tenderNo"/>
+  	</property>
+  	
+  	<property name="tenderName">
+	  		<column name="tenderName"/>
+  	</property>
+  
+  <property name="description">
+  		<column name="description"/>
+  	</property>
+  
+  	<property name="dateFrom">
+   		<column name="dateFrom" />
+  	</property>
+  	
+  	<property name="dateTo">
+   		<column name="dateTo" />
+  	</property>
+  	
+  	<property name="tenderAmount">
+   		<column name="tenderAmount" />
+  	</property>
+  	
+  	<property name="staffNumber">
+   		<column name="staffNumber" />
+  	</property>
+  	
+  	<property name="depositedMoney">
+   		<column name="depositedMoney" />
+  	</property>
+  	
+  	
+  <many-to-one name="areaId" class="VO.AreaVO" column="AreaId"></many-to-one>
+ </class>
+
+</hibernate-mapping>

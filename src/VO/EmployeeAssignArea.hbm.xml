@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.EmployeeAssignAreaVO" table="Employee_Assign_Area">
+   
+   	<id name="assignId" type="int" column="AssignId" >
+   		<generator class="increment"/>
+  	</id>
+
+  	
+  
+  	 	
+  	<property name="description">
+  		<column name="description"/>
+  	</property>
+  <many-to-one name="staffId" class="VO.AddStaffVO" column="staffId"></many-to-one>
+  <many-to-one name="areaId" class="VO.AreaVO" column="AreaId"></many-to-one>
+ </class>
+
+</hibernate-mapping>

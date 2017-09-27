@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.AreaVO" table="Area">
+   
+   	<id name="areaId" type="int" column="AreaId" >
+   		<generator class="increment"/>
+  	</id>
+
+  	<property name="areaName">
+   		<column name="AreaName" />
+  	</property>
+  
+  	<property name="description">
+  		<column name="Description"/>
+  	</property>
+  	
+  	<property name="pincode" type="int">
+  		<column name="pincode"/>
+  	</property>
+  
+  <many-to-one name="zoneId" class="VO.ZoneVO" column="zoneId"></many-to-one>
+  	
+  	<many-to-one name="wardId" class="VO.WardVO" column="wardId"></many-to-one>
+ </class>
+
+</hibernate-mapping>

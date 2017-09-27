@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.CompanylistVO" table="Companylist">
+   
+   	<id name="companylistId" type="int" column="companylistId" >
+   		<generator class="increment"/>
+  	</id>
+  	
+  	<property name="registrationNo">
+  		<column name="registrationNo"/>
+  	</property>
+
+	<property name="companyName">
+	  		<column name="companyName"/>
+  	</property>
+  
+  <property name="websiteUrl">
+  		<column name="websiteUrl"/>
+  	</property>
+  
+  	<property name="city">
+   		<column name="city" />
+  	</property>
+  
+  
+  <property name="address1">
+   		<column name="address1" />
+  	</property>
+  	
+  	<property name="address2">
+   		<column name="address2" />
+  	</property>
+  	
+  	<property name="email">
+   		<column name="email" />
+  	</property>
+  	
+  	<property name="phone">
+   		<column name="phone" />
+  	</property>
+  	
+  	<property name="path">
+   		<column name="path" />
+  	</property>
+ </class>
+
+</hibernate-mapping>

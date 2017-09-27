@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+  <class name="VO.CompanyRegistrationVO" table="CompanyRegistration">
+   
+   	<id name="companyRegistrationId" type="int" column="CompanyRegistrationId" >
+   		<generator class="increment"/>
+  	</id>
+	
+	<property name="registrationNo">
+	  		<column name="registrationNo"/>
+  	</property>
+  	
+	<property name="companyName">
+	  		<column name="CompanyName"/>
+  	</property>
+  
+  <property name="url">
+  		<column name="url"/>
+  	</property>
+  
+  
+  
+  	
+  	<property name="address1">
+   		<column name="Address1" />
+  	</property>
+  	
+  	<property name="address2">
+   		<column name="Address2" />
+  	</property>
+  	
+  	<property name="email">
+   		<column name="Email" />
+  	</property>
+  	
+  	<property name="phone">
+   		<column name="phone" />
+  	</property>
+  	
+  	<property name="password">
+   		<column name="password" />
+  	</property>
+  	
+  	<property name="retypePassword">
+   		<column name="retypePassword" />
+  	</property>
+  	
+  	<property name="path">
+   		<column name="path" />
+  	</property>
+  	
+  	<many-to-one name="user_Id" class="VO.login_vo" column="UserId"></many-to-one>
+  
+ </class>
+
+</hibernate-mapping>

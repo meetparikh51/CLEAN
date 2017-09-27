@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/clean1</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.connection.pool_size">10</property>
+		<property name="show_sql">true</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- Mapping files -->
+		<mapping resource="VO/Zone.hbm.xml"/>
+        <mapping resource="VO/Message.hbm.xml"/>
+        <mapping resource="VO/Ward.hbm.xml"/>
+        <mapping resource="VO/Area.hbm.xml"/>
+        <mapping resource="VO/EventMaster.hbm.xml"/>
+        <mapping resource="VO/login.hbm.xml"/>
+        <mapping resource="VO/Companylist.hbm.xml"/>
+        <mapping resource="VO/AddStaff.hbm.xml"/>
+        <mapping resource="VO/AddDustbin.hbm.xml"/>
+        <mapping resource="VO/EmployeeAssignArea.hbm.xml"/>
+        <mapping resource="VO/CompanyRegistration.hbm.xml"/>
+        <mapping resource="VO/roadside.hbm.xml"/>
+        <mapping resource="VO/AddSchedule.hbm.xml"/>
+        <mapping resource="VO/UserRegistration.hbm.xml"/>
+        <mapping resource="VO/Complain.hbm.xml"/>
+        <mapping resource="VO/Tender.hbm.xml"/>
+        <mapping resource="VO/postwaste.hbm.xml"/>
+        <mapping resource="VO/Messageall.hbm.xml"/>
+        <mapping resource="VO/medicalwaste.hbm.xml"/>
+        <mapping resource="VO/constructionwaste.hbm.xml"/>
+        
+        
+        
+        
+	</session-factory>
+</hibernate-configuration>

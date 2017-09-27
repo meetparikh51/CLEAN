@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="VO.GarbageVO" table="Garbage">
+   
+   	<id name="requestId" type="int" column="Request Id" >
+   		<generator class="increment"/>
+  	</id>
+
+	<property name="garbageType">
+  		<column name="Garbage Type"/>
+  	</property>
+  	
+  	<property name="date">
+   		<column name="Date" />
+  	</property>
+  
+  	<property name="description">
+  		<column name="Description"/>
+  	</property>
+  
+  <property name="userId">
+  		<column name="User Id"/>
+  	</property>
+	
+	<property name="phoneNo">
+  		<column name="Phone No"/>
+  	</property>
+  	
+   </class>
+
+</hibernate-mapping>
